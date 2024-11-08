@@ -1,12 +1,25 @@
 my_list = [42, 69, 322, 13, 0, 99, -5, 9, 8, 7, -6, 5]
 
 a = 0
-my_list.remove(0)
 
 while a <= len(my_list):
-    print(my_list[a])
+    b = my_list[a]
+
     a += 1
 
-    if int(my_list[a]) < 0:
+    if b == 0 :
+        continue
+
+    elif b < 0 :
         break
+
+    elif a == len(my_list) :
+        break
+
+    else:
+        print(b)
+
+
+
+
 
